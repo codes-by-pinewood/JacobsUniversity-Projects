@@ -1,0 +1,58 @@
+body {
+<<<<<<< HEAD
+    background-color: white;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    color: black;
+  }
+=======
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+html {
+  height: 100%;
+}
+  h1 {
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    font-size: 70px;
+    background-color: white;
+    
+  }
+  h2 {
+    text-align: center;
+    color: black;
+    
+  }
+  h3 {
+    text-align: center;
+    color: black;
+    
+  }
+  p {
+    color: black;
+
+  }
+
+  
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+>>>>>>> c1c4a06dcd59fe3258193fed7fabb694ccb0231a

@@ -1,0 +1,10 @@
+document.getElementById("week-number").innerHTML = "Week Number #";
+document.getElementById("predecessor").innerHTML = "predecessor";
+document.getElementById("successor").innerHTML = "succeesor";
+document.getElementById("inventory").innerHTML = "inventory";
+document.getElementById("cost").innerHTML = "cost";
+document.getElementById("holding-cost").innerHTML = "holding cost";
+document.getElementById("downstream-player").innerHTML = "Backorder Cost: #";
+document.getElementById("upstream-player").innerHTML = "predecessor";
+document.getElementById("shipping-delay").innerHTML = "shipping dealy";
+document.getElementById("info_delay").innerHTML = "info delay";

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 70px;
+        background-color: purple;
+      }
+
+      /* Create four equal columns that floats next to each other */
+      .button {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      .button:hover {
+        transform: scale(
+          1.25
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      a:link {
+        color: white;
+      }
+
+      a:visited {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WHICH ONE ARE YOU?</h1>
+
+    <div class="row">
+      <li>
+        <a
+          href="player_screen_manufacturer.html"
+          class="button"
+          style="background-color:red;"
+          >Manufacturer</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="player_screen_distributor.html"
+          class="button"
+          style="background-color:lightblue;"
+          >Distributor</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="player_screen_wholesaler.html"
+          class="button"
+          style="background-color:lightpink;"
+          >Wholesaler</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="player_screen_retailer.html"
+          class="button"
+          style="background-color:orange;"
+          >Retailer</a
+        >
+      </li>
+    </div>
+  </body>
+</html>

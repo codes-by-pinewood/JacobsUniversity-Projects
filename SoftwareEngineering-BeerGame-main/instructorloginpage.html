@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
+=======
+  <style>
+
+      input[type=text], select{
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; 
+
+    }
+
+   
+    input[type=password], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
+
+ 
+
+
+
+  </style>
+>>>>>>> c1c4a06dcd59fe3258193fed7fabb694ccb0231a
+</head>
+<body>
+
+<h1> Instructor View</h1>
+<<<<<<< HEAD
+<p1>Please enter the following to create a game for your institution/organisation/class:</p1>
+<br><br><br>
+
+
+<form id="create-member" onkeydown="return event.key != 'Enter'">
+    <label for="inst_email">Email:</label>
+    <input type="text" id="inst_email" name="inst_email">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button id='create-user'>Create Account</button>
+    
+</form>
+<script src="helpers.js"></script>
+<script src="signup.js"></script>
+=======
+
+
+<p1>Please enter the following to create an account for your institution/organisation/class:</p1>
+<br><br><br>
+
+<div>
+<form action="connection.php" method = "POST">
+
+    <label for="orgname">Institution/Organisation/Class:</label>
+    <select id="text" id="orgname" name="orgname">
+            <option value="Select">Select</option>
+            <option value="Jacobs University Bremen">Jacobs University Bremen </option>
+            <option value="University of Bremen ">University of Bremen</option>
+            <option value="Technical University Munich">Technical University Munich</option>
+    </select> <br><br>
+
+    <label for="inst_email">Email:</label>
+    <input type="text" id="inst_email" name="inst_email" required><br><br>
+
+    <label for="inst_password">Password:</label>
+    <input type="password" id="inst_password" name="inst_password" required><br><br>
+
+</form>
+
+
+<a href="instructorwelcomepage.html" class="button">create an account</a>
+
+</div>
+
+
+
+<p1><br></br><br>Already have an account?<br></br></p1>
+<div>
+<form action="connection.php">
+
+  <label for="inst_email">Email:</label>
+  <input type="text" id="inst_email" name="inst_email"><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br><br>
+
+</form>
+
+<a href="instructorwelcomepage.html" class="button">login</a>
+</div>
+
+>>>>>>> c1c4a06dcd59fe3258193fed7fabb694ccb0231a
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="player_screen_1.css">
+</head>
+<body>
+
+
+
+  <style>
+   
+    h2 {
+        text-align : center;
+    }
+
+    .button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+   </style> 
+</head>
+<body>
+    <div id="div1">
+        <h2> Input screen of Retailer of game 1 </h2>
+        <h2> For week 2 </h2> 
+        <table style="width:60%">
+            <tr>
+              <th>
+                  <p3>Demand from dist: </p3><br>
+                  <p1>On backorder: </p1><br>
+                  <p2>Total requirements : </p2> 
+                  
+              </th>
+              <th>
+                <p3>Beginning inventory: </p3><br>
+                <p1>Incoming shipment: </p1><br>
+                <p2>Total available: </p2>
+              </th>
+    
+              
+            </tr>
+              <p2> Units shipped to retail this week: </p2><br>
+              <p2> Ending inventory: </p2><br>
+              <form action="connection.php" method = "POST">
+
+
+                <label for="units_from_dist">Enter the number of units to be purchased from Distributor:</label>
+                <input type="number" id="units_from_dist" name="units_from_dist"><br><br>
+            
+            </form>
+          </table>
+
+    </div>
+    <div id="div2">
+        <h2>Retailer information for the last 10 weeks </h2>
+        <p1> Note:  </h2> 
+            <table style="width:80%">
+                <tr>
+                  <th>
+                      <p3>Week </p3>
+                     
+                      
+                  </th>
+                  <th>
+                    <p3>Inv/Bk </p3>
+                  </th>
+        
+                  <th>
+                    <p3>Demand </p3>
+                  </th>
+                  <th>
+                    <p3>Incom. Ship </p3>
+                  </th>
+                  <th>
+                    <p3>Outgo. Ship </p3>
+                  </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <p3>1 </p3>
+                       
+                        
+                    </th>
+                    <th>
+                      <p3>2 </p3>
+                    </th>
+          
+                    <th>
+                      <p3>2 </p3>
+                    </th>
+                    <th>
+                      <p3>4 </p3>
+                    </th>
+                    <th>
+                      <p3>5 </p3>
+                    </th>
+                  </tr>
+
+
+              </table>
+    </div>
+
+    <div id="div3">
+        <h2> Status of other supply chain members </h2>
+        <p2> When all players have completed their order for the current week the player will automatically receive a link to proceed to the next week</p2>
+        <h2> Week 2 </h2>
+        <p2> Factory: has not ordered </p2> <br> 
+        <p2> Distributor: has not ordered </p2> <br>
+        <p2> Wholesaler: has not ordered </p2> <br>
+        <p2> Retailer: has not ordered </p2> <br>
+
+
+    </div>
+
+    <div id="div4">
+        <a href="demandplot.html" class="button">Demand plot</a>
+        <a href="orderplot.html" class="button">Order plot</a>
+        <a href="inventoryplot.html" class="button">Inventory plot</a>
+        <a href="backorderplot.html" class="button">Backorder plot</a>
+        <h2> Inventory and status plots for Retailer </h2>
+        <p2> Holding cost: 0.5 </p2> <br> 
+        <p2> Backorder cost: 1 </p2> <br>
+        <p2> Downstream player: no one</p2> <br>
+        <p2> Upstream player: Wholesaler</p2> <br>
+        <p2> Shipping delay: 2 wks</p2> <br>
+        <p2> Information delay: 2 wks </p2> <br> 
+
+
+    </div>
+
+</body>
+</html> 
+
+
+</html>

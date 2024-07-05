@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "Supply Chains Plot"
+          },
+          axisX: {
+            valueFormatString: "##",
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true
+            }
+          },
+          axisY: {
+            title: "Inventory units",
+            includeZero: true,
+            crosshair: {
+              enabled: true
+            }
+          },
+          toolTip: {
+            shared: true
+          },
+          legend: {
+            cursor: "pointer",
+            verticalAlign: "bottom",
+            horizontalAlign: "left",
+            dockInsidePlotArea: true,
+            itemclick: toogleDataSeries
+          },
+          data: [
+            {
+              type: "line",
+              showInLegend: true,
+              name: "Inventory/Backorder of Distributor",
+              markerType: "square",
+              xValueFormatString: "##",
+              color: "#F08080",
+              dataPoints: [
+                { x: 1, y: 650 },
+                { x: 2, y: 700 },
+                { x: 3, y: 710 },
+                { x: 4, y: 658 },
+                { x: 5, y: 734 },
+                { x: 6, y: 963 },
+                { x: 7, y: 847 },
+                { x: 8, y: 853 },
+                { x: 9, y: 869 },
+                { x: 10, y: 943 },
+                { x: 11, y: 970 },
+                { x: 12, y: 869 },
+                { x: 13, y: 890 },
+                { x: 14, y: 930 }
+              ]
+            },
+            {
+              type: "line",
+              showInLegend: true,
+              name: "Inventory/Backorder of Factory",
+              xValueFormatString: "##",
+              lineDashType: "dash",
+              dataPoints: [
+                { x: 1, y: 510 },
+                { x: 2, y: 560 },
+                { x: 3, y: 540 },
+                { x: 4, y: 558 },
+                { x: 5, y: 544 },
+                { x: 6, y: 693 },
+                { x: 7, y: 657 },
+                { x: 8, y: 663 },
+                { x: 9, y: 639 },
+                { x: 10, y: 673 },
+                { x: 11, y: 660 },
+                { x: 12, y: 562 },
+                { x: 13, y: 643 },
+                { x: 14, y: 570 }
+              ]
+            },
+            {
+              type: "line",
+              showInLegend: true,
+              name: "Inventory/Backorder of Distributor",
+              markerType: "square",
+              xValueFormatString: "##",
+              color: "purple",
+              dataPoints: [
+                { x: 1, y: 230 },
+                { x: 2, y: 340 },
+                { x: 3, y: 290 },
+                { x: 4, y: 780 },
+                { x: 5, y: 120 },
+                { x: 6, y: 940 },
+                { x: 7, y: 323 },
+                { x: 8, y: 12 },
+                { x: 9, y: 456 },
+                { x: 10, y: 943 },
+                { x: 11, y: 970 },
+                { x: 12, y: 869 },
+                { x: 13, y: 890 },
+                { x: 14, y: 930 }
+              ]
+            },
+            {
+              type: "line",
+              showInLegend: true,
+              name: "Inventory/Backorder of Distributor",
+              markerType: "square",
+              xValueFormatString: "##",
+              color: "lightblue",
+              dataPoints: [
+                { x: 1, y: 650 },
+                { x: 2, y: 120 },
+                { x: 3, y: 710 },
+                { x: 4, y: 658 },
+                { x: 5, y: 734 },
+                { x: 6, y: 120 },
+                { x: 7, y: 847 },
+                { x: 8, y: 853 },
+                { x: 9, y: 869 },
+                { x: 10, y: 600 },
+                { x: 11, y: 445 },
+                { x: 12, y: 458 },
+                { x: 13, y: 707 },
+                { x: 14, y: 930 }
+              ]
+            }
+          ]
+        });
+        chart.render();
+
+        function toogleDataSeries(e) {
+          if (
+            typeof e.dataSeries.visible === "undefined" ||
+            e.dataSeries.visible
+          ) {
+            e.dataSeries.visible = false;
+          } else {
+            e.dataSeries.visible = true;
+          }
+          chart.render();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
+>>>>>>> e025e966029dc86b9ac2a4ff425de71ead4c6b25

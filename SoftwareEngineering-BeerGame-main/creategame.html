@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Create A New Game!</h1>
+
+    <p1>Enter the following values:</p1>
+    <br /><br /><br />
+
+    <form action="/action_page.php">
+      <label for="orgname">Session length:</label>
+      <input
+        type="number"
+        id="session_length"
+        name="session_length"
+      /><br /><br />
+
+      <label for="holding_cost">Holding cost:</label>
+      <input type="number" id="holding_cost" name="holding_cost" /><br /><br />
+
+      <label for="backorder_cost">Backorder cost:</label>
+      <input
+        type="number"
+        id="backorder_cost"
+        name="backorder_cost"
+      /><br /><br />
+
+      <label for="wholesaler_present">Is wholesaler present?:</label>
+      <select id="text" id="wholesaler_present" name="wholesaler_present">
+        <option value="Select">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br /><br />
+
+      <label for="retailer_present">Is retailer present?:</label>
+      <select id="text" id="retailer_present" name="retailer_present">
+        <option value="Select">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br /><br />
+
+      <label for="gamenum">Infosharing:</label>
+      <select id="text" id="info_sharing" name="info-sharing">
+        <option value="Select">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br /><br />
+
+      <label for="is_defaultgame">Is it default game?:</label>
+      <select id="text" id="is_defaultgame" name="is_defaultgame">
+        <option value="Select">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br /><br />
+
+      <label for="demand">customer demand:</label>
+      <input type="number" id="demand" name="demand" /><br /><br />
+    </form>
+    <button id="mybutton">create game</button>
+
+    <script>
+      document.getElementById("mybutton").onclick = function() {
+        location.href = "listofgames.html";
+      };
+    </script>
+  </body>
+</html>

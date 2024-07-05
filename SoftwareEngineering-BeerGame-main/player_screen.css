@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+style{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.role{
+    position: fixed;
+    left: 10px;
+    width: 50%;
+    top:10px;
+    text-align: center;
+}
+
+.history{
+    position: fixed;
+    right: 10px;
+    width: 50%;
+    top:10px;
+    text-align: center;
+}
+
+.graph{
+    position: fixed;
+    right: 10px;
+    width: 50%;
+    bottom:10px;
+}
+
+.proceed{
+    position: fixed;
+    left: 10px;
+    width: 50%;
+    bottom:10px;
+    text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+      input[type=text], select{
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; 
+
+    }
+
+   
+    input[type=password], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+<h1> Player View</h1>
+
+
+<p1>Please enter the following to create an account:</p1>
+<br><br><br>
+
+<div>
+<form action="insert.php" method = "POST">
+
+    <label for="orgname">Instructor/Organisation/Class:</label>
+    <input type="text" id="orgname" name="org_name" required><br><br>
+   <!-- <select id="text" id="orgname" name="orgname">
+            <option value="Select">Select</option>
+            <option value="Jacobs University Bremen">Jacobs University Bremen </option>
+            <option value="University of Bremen ">University of Bremen</option>
+            <option value="Technical University Munich">Technical University Munich</option>
+    </select> <br><br> -->
+
+    <label for="inst_email">Email:</label>
+    <input type="text" id="inst_email" name="inst_email" required><br><br>
+
+    <label for="inst_password">Password:</label>
+    <input type="password" id="inst_password" name="inst_password" required><br><br>
+
+</form>
+
+
+<a href="institutionslist.html" class="button">create an account</a>
+
+</div>
+
+
+
+<p1><br></br><br>Already have an account?<br></br></p1>
+<div>
+<form action="/action_page.php">
+
+  <label for="inst_email">Email:</label>
+  <input type="text" id="inst_email" name="inst_email"><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br><br>
+
+</form>
+
+<a href="institutionslist.html" class="button">login</a>
+</div>
+
+</body>
+
+</html>
